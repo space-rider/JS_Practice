@@ -1,0 +1,52 @@
+#first_col_list, #second_col_list {
+    height: 50%;
+    float: left;
+    margin: 2%;
+}
+
+article:last-of-type {
+    clear: left;
+}
+
+#javascript_words td, #ecmascript_words td {
+    font-size: 1.3em;
+    padding: 2%;
+    color: blue; 
+    empty-cells: hide;
+}
+
+
+#javascript_words, #ecmascript_words {
+    width: 100%;
+}
+
+caption {
+    font-family: 'Roboto', sans-serif;
+}
+
+img:first-of-type {
+    width:80%; 
+    margin: 3% auto; 
+    display: block;
+}
+
+h4 {
+    border-bottom: 1px dashed black;
+    font-size: 1.3em;
+    padding-bottom: 0.5%;
+    display: inline;
+}
+
+@media screen and (max-width: 576px) {
+    #javascript_words td, #ecmascript_words td {
+        font-size: 0.8em;
+        padding: 1%;
+        color: blue;
+        border: 1px dashed black;
+    }
+    img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+   }

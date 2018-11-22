@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание №1</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">главная страница</a> /</li>
+            <li><a href="index.html">к списку задач</a> /</li>
+            <li><a href="#" class="current_location">задание №1</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Создайте 3 переменные x = 6, y = 15, и z = 4.</h2>
+    </header>
+
+    <section>
+        <article>
+            <p>Выполните и отобразите результат следующих операций для этих переменных:</p>
+            <ul>
+                <li>x += y - x++ * z; </li>
+            </ul>
+
+            <p>
+                <script>
+                    var x = 6, y = 15, z = 4;
+                    x += y - x++ * z;
+
+                    document.write('X будет равен : ' + x + '<hr>');
+                </script>
+            </p>
+
+            <ul>
+                <li>z = -- x - y * 5 ;</li>
+            </ul>
+
+            <p>
+                <script>
+                    var x = 6, y = 15, z = 4;
+                    z = --x - y * 5;
+
+                    document.write('Z будет равно : ' + z + '<hr>');
+                </script>
+            </p>
+
+            <ul>
+                <li>y /= x + 5 % z ; </li>
+            </ul>
+
+            <p>
+                <script>
+                    var x = 6, y = 15, z = 4;
+                    y /= x + 5 % z;
+
+                    document.write('Y будет равен : ' + y + '<hr>');
+                </script>
+            </p>
+
+            <ul>
+                <li>z = x++ + y * 5 ;</li>
+            </ul>
+
+            <p>
+                <script>
+                    var x = 6, y = 15, z = 4;
+                    z = x++ + y * 5;
+
+                    document.write('Z будет равно : ' + z + '<hr>');
+                </script>
+            </p>
+
+            <ul>
+                <li>x = y - x++ * z ;</li>
+            </ul>
+
+            <p>
+                <script>
+                    var x = 6, y = 15, z = 4;
+                    x = y - x++ * z;
+
+                    document.write('X будет равно : ' + x + '<hr>');
+                </script>
+            </p>
+        </article>
+    </section>
+
+
+</body>
+
+</html>

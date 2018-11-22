@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Основные конструкции и понятия, рассмотренные на уроке.</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/lesson1_1task.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">главная страница</a> /</li>
+            <li><a href="index.html">к списку задач</a> /</li>
+            <li><a href="#" class="current_location">самостоятельная деятельность</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Основные конструкции и понятия, рассмотренные на уроке.</h2>
+    </header>
+
+    <section>
+        <article>
+            <h3>
+                <mark>The JavaScript Programming Language</mark>
+            </h3>
+            <p><strong>JavaScript</strong> – мультипарадигменный язык программирования. Поддерживает
+                объектно-ориентированный, императивный и функциональный стили. Является реализацией
+                языка ECMAScript (стандарт ECMA-262).</p>
+
+            <P><strong>JavaScript</strong> – это не Java, язык Java разработан в компании Sun Microsystems,
+                JavaScript вкомпании Netscape и кроме некоторой схожести по синтаксису и способности
+                предоставлять исполняемое содержимое для веб - браузеров, эти два языка между собой ничего
+                не связывает.</P>
+
+            <p>Язык JavaScript по синтаксису напоминает C, C++ и Java программными конструкциями такими как:
+                циклы, условные конструкции и операторы. Однако это подобие ограничивается синтаксической
+                схожестью.</p>
+
+            <img src="img/browser icons.png" alt="" title="">
+
+            <p>Интерпретатор JavaScript, которым оснащены браузеры, позволяет выполнять клиентские сценарии
+                загруженные вместе с разметкой страницы.</p>
+            <p>Лексическая структура Javascript:</p>
+            <ul>
+                <li>Чувствителен к регистру.</li>
+                <li>Инструкции должны заканчиваться точкой с запятой или начинаться с новой строки.</li>
+                <li>Игнорирует пробелы и табуляции.</li>
+            </ul>
+        </article> <br>
+
+        <article>
+            <h3>
+                <mark>Роль клиентского Javascript</mark>
+            </h3>
+            <ul>
+                <li>Пользовательский интерфейс.</li>
+                <ul>
+                    <li>Создание визуальных эффектов (анимация).</li>
+                    <li>Выполнение не сложных вычислений.</li>
+                    <li>Проверка данных введенных пользователем.</li>
+                    <li>Манипуляция данными введенными пользователем в формы.</li>
+                    <li>Поиск по данным, встроенным в загружаемую страницу.</li>
+                    <li>Сохранение данных в cookies.</li>
+                </ul>
+
+                <li>Динамическое изменение содержимого страницы (DHTML).</li>
+                <li>Прямое взаимодействие с сервером без перезагрузки всей страницы (AJAX).</li>
+            </ul>
+        </article> <br>
+
+        <article>
+            <h3>
+                <mark>Переменные и типы данных</mark>
+            </h3>
+            <p>
+                <strong>Переменная</strong> - это символ или слово, обозначающее некоторое значение.
+            </p>
+            <p>
+                <strong>Javascript</strong> - динамически типизированный, а не строго типизированный
+                язык программирования.
+            </p>
+
+            <img src="img/var example.png" alt="">
+
+            <p><span class="red">Правила именования переменных</span></p>
+
+            <ul>
+                <li>Идентификатор должен быть одним словом - <span class="green">myName</span>.</li>
+                <li>Имя не может начинаться с цифры - <span class="green">element21</span>.</li>
+                <li>Первым символом имени может быть символ '$' или '_' - <span class="green">$str</span>
+                    <span class="green">_name</span>.</li>
+                <li>При именовании часто используються правила camelCase и PascalCase - <span class="green">secondName</span>
+                    <span class="green">FirstName</span>.</li>
+            </ul>
+        </article> <br>
+
+        <article>
+            <h3>
+                <mark>Типы данных</mark>
+            </h3>
+
+            <ol type="none">
+                <li><b>Элементарные типы</b></li>
+                <ul>
+                    <li>Числа (<span class="blue">Number</span>)</li>
+                    <li>Строки (<span class="blue">String</span>)</li>
+                    <li>Логические значения (<span class="blue">Boolean</span>)</li>
+                </ul><br>
+                <li><b>Тривиальные типы</b></li>
+                <ul>
+                    <li><span class="blue">null</span> - отсутствие значения</li>
+                    <li><span class="blue">undefined</span> - неопределенное значение</li>
+                </ul><br>
+                <li><b>Составные типы</b></li>
+                <ul>
+                    <li>Объект (<span class="blue">Object</span>)</li>
+                    <li>Массив (<span class="blue">Array</span>)</li>
+                </ul><br>
+                <li><b>Специальный тип</b></li>
+                <ul>
+                    <li>Функция (<span class="blue">function</span>)</li>
+                </ul>
+            </ol>
+
+            <!-- <p>Несколько примеров создания переменных:</p>
+            <p>
+                <span class="blue">var</span> a = 10; // <span class="green">тип Number</span> <br>
+                <span class="blue">var</span> b = 0.8; // <span class="green">тип Number</span>
+            </p>
+
+            <p>
+                <span class="blue">var</span> c = <span class="red">"string"</span> // <span class="green">
+                тип String</span> <br>
+                <span class="blue">var</span> d = <span class="red">'string'</span> // <span class="green">
+                тип String</span>
+            </p> -->
+        </article>
+
+        <article>
+            <h3>
+                <mark>Операторы</mark>
+            </h3>
+
+            <h4>Арифмитичекие операторы</h4>
+            <p>Арифметические операторы принимают численные значения и возвращают число. <br>
+                Стандартные операторы - это прибавление (+), вычитание (-), умножение (*) и
+                деление (/). Они работают как обычно, причем все операции осуществляются с
+                плавающей точкой.</p>
+
+            <h4>Операторы присваивания</h4>
+            <p>В результате операции присваивания операнду слева от оператора присваивания (знак "=")
+                устанавливается значение , которое берётся из правого операнда. Основным оператором
+                присваивания является =, он присваивает значение правого операнда операнду,
+                находящемуся слева. Таким образом, выражение <b>a</b> = <b>b</b> означает, что <b>a</b>
+                присваивается значение <b>b</b>.</p>
+
+            <p>Существуют также составные операторы присваивания, которые используются для сокращенного
+                представления операций, описанных в следующей таблице:</p>
+
+            <table border="1" cellspacing="0" cellpadding="5" id="operators">
+                <tr>
+                    <th>Оператор</th>
+                    <th>Пример</th>
+                    <th>Эквивалент</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>a = b</td>
+                    <td>a = b</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>a += b</td>
+                    <td>a = a + b</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>a -= b</td>
+                    <td>a = a - b</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>a *= b</td>
+                    <td>a = a * b</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>a /= b</td>
+                    <td>a = a / b</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>a %= b</td>
+                    <td>a = a % b</td>
+                </tr>
+                <tr>
+                    <td>
+                        <<=</td> <td>a <<= b</td> <td>a = a << b</td> </tr> <tr>
+                    <td>>>=</td>
+                    <td>a >>= b</td>
+                    <td>a = a >> b</td>
+                </tr>
+                <tr>
+                    <td>>>>=</td>
+                    <td>a >>>= b</td>
+                    <td>a = a >>> b</td>
+                </tr>
+                <tr>
+                    <td>&=</td>
+                    <td>a &= b</td>
+                    <td>a = a & b</td>
+                </tr>
+                <tr>
+                    <td>^=</td>
+                    <td>a ^= b</td>
+                    <td>a = a ^ b</td>
+                </tr>
+                <tr>
+                    <td>|=</td>
+                    <td>a |= b</td>
+                    <td>a = a | b</td>
+                </tr>
+            </table>
+        </article> <br><br>
+
+        <article>
+            <h4>Операторы сравнения</h4>
+            <p>Оператор сравнения сравнивает свои операнды и возвращает логическое значение, базируясь
+                на истинности сравнения. Операнды могут быть числами, строками, логическими величинами
+                или объектами. Строки сравниваются на основании стандартного лексикографического
+                порядка, используя Unicode-значения. В большинстве случаев, если операнды имеют разный
+                тип, то JavaScript пробует преобразовать их в тип, подходящий для сравнения. Такое
+                поведение обычно происходит при сравнении числовых операндов. Единственным исключением
+                из данного правила является сравнение с использованием операторов <b>===</b> и <b>!==</b>,
+                которые производят строгое сравнение на равенство или неравенство. Эти операторы не
+                пытаются преобразовать операнды перед их сравнением</p>
+
+            <p>Javascript допускает как строгое сравнение, так и сравнение с приведением типов. <br>
+                Для строгого сравнения оба операнда должны иметь одинаковый тип и:</p>
+
+            <ul type="square">
+                <li>NaN строго не равно ничему, включая NaN.</li>
+                <li>Две строки строго равны, если состоят из одинаковой последовательности символов.</li>
+                <li>Null и Undefined равны ==, но не строго равны ===.</li>
+                <li>Два булевых операнда строго равны, если они оба true или false.</li>
+                <li>Два операнда-объекта строго равны, если являются ссылками на один и тот же общий объект.</li>
+                <li>Два числа строго равны, если равны в обычном смысле слова. +0 строго равен -0.</li>
+            </ul>
+
+            <p>Более подробно о операторах - <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators#%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B_%D0%BF%D1%80%D0%B8%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">MDN
+                web docs</a>
+            </p>
+
+            <div id="first_col_list">
+                <p><b>Равенство (==)</b></p>
+                <p>
+                    (1==1) = <span class="blue">true</span><br>
+                    ('text=='text') = <span class="blue">true</span><br>
+                    (<span class="blue">null</span>==<span class="blue">undefined</span>) = <span class="blue">true</span><br>
+                    (1=='1') = <span class="blue">true</span><br>
+                    (1==<span class="blue">true</span>) = <span class="blue">true</span><br>
+                    (0==<span class="blue">false</span>) = <span class="blue">true</span><br>
+                </p>
+            </div>
+            <div id="second_col_list">
+                <p><b>Идентичность (===)</b></p>
+                <p>
+                    (1===1) = <span class="blue">true</span><br>
+                    ('text'==='text') = <span class="blue">true</span><br>
+                    (<span class="blue">null</span>===<span class="blue">undefined</span>) = <span class="blue">false</span><br>
+                    (1==='1') = <span class="blue">false</span><br>
+                    (1===<span class="blue">true</span>) = <span class="blue">false</span><br>
+                    (0===<span class="blue">false</span>) = <span class="blue">false</span><br>
+                </p>
+            </div>
+        </article> <br>
+
+        <article>
+            <h3>
+                <mark>Зарезервированные слова</mark>
+            </h3>
+
+            <table id='javascript_words'>
+                <caption align="center"><em>Набор зарезервированных слов в Javascript</em></caption>
+                <tr>
+                    <td>break</td>
+                    <td>do</td>
+                    <td>if</td>
+                    <td>switch</td>
+                    <td>typeof</td>
+                </tr>
+                <tr>
+                    <td>case</td>
+                    <td>else</td>
+                    <td>in</td>
+                    <td>this</td>
+                    <td>var</td>
+                </tr>
+                <tr>
+                    <td>catch</td>
+                    <td>false</td>
+                    <td>instanceof</td>
+                    <td>throw</td>
+                    <td>void</td>
+                </tr>
+                <tr>
+                    <td>continue</td>
+                    <td>finally</td>
+                    <td>new</td>
+                    <td>true</td>
+                    <td>while</td>
+                </tr>
+                <tr>
+                    <td>default</td>
+                    <td>for</td>
+                    <td>null</td>
+                    <td>try</td>
+                    <td>with</td>
+                </tr>
+                <tr>
+                    <td>delete</td>
+                    <td>function</td>
+                    <td>return</td>
+                </tr>
+            </table>
+
+            <p>
+                В языке JavaScript предусмотрено несколько зарезервированных слов, которые
+                не могут использоваться в качестве идентификаторов. Зарезервированные слова
+                имеют определенное значение в языке JavaScript, так как они являются частью
+                синтаксиса языка. Использование зарезервированных слов приведет к ошибке
+                компиляции при загрузке скрипта.
+            </p>
+
+            <table id="ecmascript_words">
+                <caption align="center"><em>Зарезервированные слова ECMAScript v3</em></caption>
+                <tr>
+                    <td>abstract</td>
+                    <td>double</td>
+                    <td>goto</td>
+                    <td>native</td>
+                    <td>static</td>
+                </tr>
+                <tr>
+                    <td>boolean</td>
+                    <td>enum</td>
+                    <td>implements</td>
+                    <td>package</td>
+                    <td>super</td>
+                </tr>
+                <tr>
+                    <td>byte</td>
+                    <td>export</td>
+                    <td>import</td>
+                    <td>private</td>
+                    <td>synchroniz</td>
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>extendes</td>
+                    <td>int</td>
+                    <td>protected</td>
+                    <td>ed</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>final</td>
+                    <td>interface</td>
+                    <td>public</td>
+                    <td>throws</td>
+                </tr>
+                <tr>
+                    <td>const</td>
+                    <td>float</td>
+                    <td>long</td>
+                    <td>short</td>
+                    <td>transient</td>
+                </tr>
+                <tr>
+                    <td>debugger</td>
+                    <td rowspan="3"></td>
+                    <td></td>
+                    <td></td>
+                    <td>volatile</td>
+                </tr>
+            </table>
+
+            <p>
+                Зарезервированные ключевые слова в ECMAScript v3 в данный момент в JavaScript
+                не используются, но зарезервированы в качестве возможных будущих расширений языка.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a> /</li>
+                <li><a href="index.html">к списку задач</a> /</li>
+                <li><a href="#" class="current_location">самостоятельная деятельность</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
