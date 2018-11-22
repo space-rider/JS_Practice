@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/lesson1_1task.css">
 </head>
 
 <body>
@@ -27,73 +28,87 @@
     <section>
         <article>
             <p>Выполните и отобразите результат следующих операций для этих переменных:</p>
-            <ul>
-                <li>x += y - x++ * z; </li>
-            </ul>
+            <div class="task">
+                <ul>
+                    <li>x += y - x++ * z; </li>
+                </ul>
+                <p>
+                    <script>
+                        var x = 6, y = 15, z = 4;
+                        x += y - x++ * z;
 
-            <p>
-                <script>
-                    var x = 6, y = 15, z = 4;
-                    x += y - x++ * z;
+                        document.write('X будет равен : ' + x);
+                    </script>
+                </p>
+            </div>
 
-                    document.write('X будет равен : ' + x + '<hr>');
-                </script>
-            </p>
+            <div class="task">
+                <ul>
+                    <li>z = -- x - y * 5 ;</li>
+                </ul>
+                <p>
+                    <script>
+                        var x = 6, y = 15, z = 4;
+                        z = --x - y * 5;
 
-            <ul>
-                <li>z = -- x - y * 5 ;</li>
-            </ul>
+                        document.write('Z будет равно : ' + z);
+                    </script>
+                </p>
+            </div>
 
-            <p>
-                <script>
-                    var x = 6, y = 15, z = 4;
-                    z = --x - y * 5;
+            <div class="task">
+                <ul>
+                    <li>y /= x + 5 % z ; </li>
+                </ul>
+                <p>
+                    <script>
+                        var x = 6, y = 15, z = 4;
+                        y /= x + 5 % z;
 
-                    document.write('Z будет равно : ' + z + '<hr>');
-                </script>
-            </p>
+                        document.write('Y будет равен : ' + y);
+                    </script>
+                </p>
+            </div>
 
-            <ul>
-                <li>y /= x + 5 % z ; </li>
-            </ul>
+            <div class="task">
+                <ul>
+                    <li>z = x++ + y * 5 ;</li>
+                </ul>
+                <p>
+                    <script>
+                        var x = 6, y = 15, z = 4;
+                        z = x++ + y * 5;
 
-            <p>
-                <script>
-                    var x = 6, y = 15, z = 4;
-                    y /= x + 5 % z;
+                        document.write('Z будет равно : ' + z);
+                    </script>
+                </p>
+            </div>
 
-                    document.write('Y будет равен : ' + y + '<hr>');
-                </script>
-            </p>
+            <div class="task">
+                <ul>
+                    <li>x = y - x++ * z ;</li>
+                </ul>
+                <p>
+                    <script>
+                        var x = 6, y = 15, z = 4;
+                        x = y - x++ * z;
 
-            <ul>
-                <li>z = x++ + y * 5 ;</li>
-            </ul>
-
-            <p>
-                <script>
-                    var x = 6, y = 15, z = 4;
-                    z = x++ + y * 5;
-
-                    document.write('Z будет равно : ' + z + '<hr>');
-                </script>
-            </p>
-
-            <ul>
-                <li>x = y - x++ * z ;</li>
-            </ul>
-
-            <p>
-                <script>
-                    var x = 6, y = 15, z = 4;
-                    x = y - x++ * z;
-
-                    document.write('X будет равно : ' + x + '<hr>');
-                </script>
-            </p>
+                        document.write('X будет равно : ' + x);
+                    </script>
+                </p>
+            </div>
         </article>
     </section>
 
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a> /</li>
+                <li><a href="index.html">к списку задач</a> /</li>
+                <li><a href="#" class="current_location">задание №1</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 
