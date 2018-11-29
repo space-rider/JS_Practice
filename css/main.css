@@ -23,8 +23,12 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-section {
+section, main {
     margin: 0 6%;
+}
+
+pre {
+    color: #666;
 }
 
 table td {
