@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание №2</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">главная страница</a> /</li>
+            <li><a href="index.html">к списку задач</a> /</li>
+            <li><a href="#" class="current_location">задание №2</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Напишите программу, которая будет рассчитывать и выводить на экран количество возможных вариантов доставки
+            товара. Для решения задачи, используйте факториал N!, рассчитываемый с помощью цикла <span class="blue">do-while.</span></h2>
+    </header>
+
+    <section>
+        <articke>
+            <p>
+                <script>
+                    var x = +prompt("Введите целое число");
+                    var i = 1;
+                    var z = x;
+        
+                    do {
+        
+                        if (x == 0) {
+                            i = 1;
+                            break;
+                        }
+        
+                        i = i * x;
+                        x = x - 1;
+                    }
+                    while (x > 0);
+        
+                    document.write('Факториал числа ' + z + '! - ' + i);
+        
+                </script>
+            </p>
+        </articke>
+    </section>
+
+    <main>
+        <code>
+            <pre>
+                &lt;script>
+                    var x = +prompt("Введите целое число");
+                    var i = 1;
+                    var z = x;
+        
+                    do {
+        
+                        if (x == 0) {
+                            i = 1;
+                            break;
+                        }
+        
+                        i = i * x;
+                        x = x - 1;
+                    }
+                    while (x > 0);
+        
+                    document.write('Факториал числа ' + z + '! - ' + i);
+        
+                &lt;/script>
+            </pre>
+        </code>
+    </main>
+
+</body>
+
+</html>
