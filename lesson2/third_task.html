@@ -21,7 +21,8 @@
     </nav>
 
     <header>
-        <h2>Используя циклы нарисуйте в браузере с помощью пробелов (<span class="red">&amp;nbsp</span>) и звездочек (*):</h2>
+        <h2>Используя циклы нарисуйте в браузере с помощью пробелов (<span class="red">&amp;nbsp</span>) и звездочек
+            (*):</h2>
     </header>
 
     <section>
@@ -34,6 +35,53 @@
             </ul>
         </article>
     </section>
+    <section>
+        <h3>Прямоугольник</h3>
+        <script>
+            var a = 15, b = 7, c = '*';
+
+            for (j = 1; j <= b; j++) {
+                for (i = 0; i < a; i++) {
+                    document.write(' ' + c);
+                }
+                document.write('<br />')
+            }
+        </script>
+
+        <h3>Прямоугольный треугольник</h3>
+        <script>
+
+            for (j = 1; j <= b; j++) {
+                document.write('<br />' + c);
+                for (i = 1; i < j; i++) {
+                    document.write(' ' + c);
+                }
+            }
+
+        </script>
+
+        <h3>Равносторонний треугольник</h3>
+        N/A
+        <script>
+
+        </script>
+
+        <h3>Ромб</h3>
+        N/A
+        <script>
+
+        </script>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a> /</li>
+                <li><a href="index.html">к списку задач</a> /</li>
+                <li><a href="#" class="current_location">задание №3</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 

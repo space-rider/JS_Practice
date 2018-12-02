@@ -4,11 +4,11 @@
     margin: 2%;
 }
 
-article:last-of-type {
-    clear: left;
+article{
+    clear: both;
 }
 
-#javascript_words td, #ecmascript_words td {
+#javascript_words td, #ecmascript_words td, #identificator_words td {
     font-size: 1.3em;
     padding: 2%;
     color: blue; 
@@ -16,7 +16,7 @@ article:last-of-type {
 }
 
 
-#javascript_words, #ecmascript_words {
+#javascript_words, #ecmascript_words, #identificator_words {
     width: 100%;
 }
 
@@ -38,12 +38,16 @@ h4 {
 }
 
 @media screen and (max-width: 576px) {
-    #javascript_words td, #ecmascript_words td {
+    #javascript_words td, #ecmascript_words td, #identificator_words td {
         font-size: 0.8em;
         padding: 1%;
         color: blue;
         border: 1px dashed black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+
     img {
         width: 100%;
         margin: 0;

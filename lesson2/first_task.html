@@ -29,9 +29,87 @@
             <p> Выведите на экран суму всех чисел, расположенных в числовом промежутке от А до В. <br>
                 Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В.</h2>
             </p>
+
+            <p>A = 17<br />
+                B = 28 </p>
+
+            <p>
+                Выведите на экран сумму всех чисел, расположенных в числовом промежутке от А до В :<br />
+                <script>
+                    var a = 17;
+                    var b = 28;
+                    var c = 0;
+
+                    for (i = a; i <= b; i++) {
+                        c += i;
+                        document.write(i + ' ');
+                    }
+
+                    document.write('<br />Сумма : ' + c);
+
+                </script>
+            </p>
+            <pre>
+                &lt;script>
+                    var a = 17;
+                    var b = 28;
+                    var c = 0;
+                
+                    for (i = a; i &lt;= b; i++) {
+                        c += i;
+                        document.write(i + ' ');
+                    }
+                
+                    document.write('&lt;br />Сумма : ' + c);
+                
+                &lt;/script>
+             </pre>
+
+            <p>
+                Все нечетные значения, расположенные в числовом промежутке от А до В : <br />
+                <script>
+                    var a = 17;
+                    var b = 28;
+                    var d = 0;
+
+                    for (i = a; i <= b; i++) {
+                        if (i % 2 == 0) {
+                        }
+                        else {
+                            document.write(' ' + i);
+                        }
+                    }
+
+                </script>
+            </p>
+            <pre>
+                &lt;script>
+                    var a = 17;
+                    var b = 28;
+                    var d = 0;
+                
+                    for (i = a; i &lt;= b; i++) {
+                        if (i % 2 == 0) {
+                        }
+                        else {
+                            document.write(' ' + i);
+                        }
+                    }
+                
+                &lt;/script>
+             </pre>
         </article>
     </section>
 
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a> /</li>
+                <li><a href="index.html">к списку задач</a> /</li>
+                <li><a href="#" class="current_location">задание №1</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 
