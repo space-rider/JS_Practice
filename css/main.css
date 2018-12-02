@@ -78,3 +78,9 @@ nav>ul>li {
 main>ul>li {
     font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 576px) {
+    pre {
+        overflow-x: scroll;
+    }
+}
