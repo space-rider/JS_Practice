@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание №1</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">главная страница</a> /</li>
+            <li><a href="index.html">к списку задач</a> /</li>
+            <li><a href="#" class="current_location">задание №1</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Создайте четыре функции для арифметических действий:</h2>
+        <p>(Add – сложение, Sub – вычитание, Mul – умножение, Div – деление). Каждая функция должна
+            принимать два параметра и выводить на экран результат вычисления. Функция деления должна
+            делать проверку деления на ноль. Пользователь вводит значения, над которыми хочет произвести
+            операцию и выбрать саму операцию. </p>
+    </header>
+
+    <section>
+        <article>
+            <p>
+                <script src="js/first_task.js"></script>
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <pre>
+        let a = +prompt('Введите целое число');
+        let b = +prompt('Введите второе целое число');
+        let x = prompt('Выберите действие, Add, Sub, Mul, Div');
+        
+        document.write('Первое число : ' + a + '&lt;br>');
+        document.write('Второе число : ' + b + '&lt;br>');
+        
+        function Add() {
+            return a + b;
+        };
+        
+        function Sub() {
+            return a - b;
+        };
+        
+        function Mul() {
+            return a * b;
+        };
+        
+        function Div() {
+            return a / b;
+        };
+        
+        switch (x) {
+            case 'Add':
+                alert(Add());
+                document.write('Сложение двух чисел : ' + Add())
+                break;
+            case 'Sub':
+                alert(Sub());
+                document.write('Вычитание двух чисел : ' + Sub())
+                break;
+            case 'Mul':
+                alert(Mul());
+                document.write('Умножение двух чисел : ' + Mul())
+                break;
+            case 'Div':
+                if (a == 0 || b == 0) {
+                    alert('Деление на 0 невозможно');
+                    document.write('Деление на 0 невозможно');
+                    break;
+                }
+                else {
+                    alert(Div());
+                    document.write('Деление двух чисел : ' + Div());
+                    break;
+                }
+            default: {
+                document.write('Действие не выбрано');
+            }    
+        }      
+            </pre>
+        </article>
+    </section>
+
+    <footer>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">главная страница</a> /</li>
+                    <li><a href="index.html">к списку задач</a> /</li>
+                    <li><a href="#" class="current_location">задание №1</a></li>
+                </ul>
+            </nav>
+        </footer>
+    
+</body>
+
+</html>
